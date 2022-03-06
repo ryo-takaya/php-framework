@@ -2,7 +2,8 @@ version: '3'
 
 services:
   php:
-    image: php:7.4-apache
+    build:
+      context: .
     container_name: framework-php
     volumes:
       - .:/var/www/html

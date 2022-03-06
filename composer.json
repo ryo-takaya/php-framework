@@ -1,0 +1,18 @@
+{
+    "name": "php/php-framework",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "Model\\": "models",
+            "Controller\\": "controllers",
+            "View\\": "views"
+        }
+    },
+    "authors": [
+        {
+            "name": "ryoutaka",
+            "email": "ryoutakaya3623@yahoo.co.jp"
+        }
+    ],
+    "require": {}
+}
