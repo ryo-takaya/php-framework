@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  php:
+    image: php:7.4-apache
+    container_name: framework-php
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8889:80
+  mysql:
+    container_name: framework-db
+    image: mysql:5.7
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=frame
+      - MYSQL_PASSWORD=root
